@@ -12,9 +12,9 @@ Fortalecer las habilidades de razonamiento lógico y resolución de problemas me
 
 ## 🛠️ Tecnologías utilizadas
 
-- HTML5
-- CSS3
-- JavaScript
+- HTML5: estructura de la página web.
+- CSS3: diseño y presentación visual.
+- JavaScript: desarrollo de las soluciones de los ejercicios.
 
 ## 📚 Contenido del proyecto
 
