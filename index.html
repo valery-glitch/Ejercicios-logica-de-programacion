@@ -1,0 +1,1050 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>...::ADSO::...</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+<body>
+	<header>
+		ADSO-3235287
+	</header>
+	<section> 
+		<div class= "menizq"> 
+			<ul id="menu"></ul>
+		</div>
+
+		<div class= "cont">
+			<div id="tit"></div>
+
+			<div id="eje1" class="row">
+				<h3>Operaciones matemáticas básicas con dos números</h3>
+				<div class="col-md-4">
+					<label>Valor 1:</label>
+					<input type= "number" class="form-control" id="e1v1" value="0">
+				</div>
+				<div class="col-md-4"> 
+					<label>Valor 2:</label>
+					<input type= "number" class="form-control" id="e1v2" value="0">
+				</div>
+				<div class="col-md-4">
+					<br>
+					<input type="button" class="form-control btn btn-primary" id="e1b1" value="Calcular">
+					<!--<div id="e1r1" class="res">Respuesta</div>-->
+				</div>
+			</div>
+
+			<div id="eje2" class="row">
+				<h3>Mayor entre dos números</h3>
+				<div class="col-md-4">
+					<label>Valor 1:</label>
+					<input type="number" class="form-control" id="e2v1" value="0">
+				</div>
+				<div class="col-md-4">
+					<label>Valor 2:</label>
+					<input type="number" class="form-control" id="e2v2" value="0">
+				</div>
+				<div class="col-md-4">
+					<br>
+					<input type="button" class="form-control btn btn-primary" id="e2b1" value="Calcular">
+				</div>
+			</div>
+
+			<div id="eje3" class= "row">
+				<h3>Comparación de un número respecto a 100</h3>
+				<div class="col-md-6">
+					<label>Valor 1:</label>
+					<input type="number" class="form-control" id="e3v1" value="0">
+				</div>
+				<div class="col-md-6">
+					<br>
+					<input type="button" class="form-control btn btn-primary" id="e3b1" value="Comparar">
+				</div>
+			</div>
+
+			<div id="eje4" class="row">
+				<h3>Organizar tres números ascendentemente</h3>
+				<div class="col-md-3">
+					<label>Valor 1:</label>
+					<input type="number" class="form-control" id="e4v1" value="0">
+				</div>
+				<div class="col-md-3">
+					<label>Valor 2:</label>
+					<input type="number" class="form-control" id="e4v2" value="0">
+				</div>
+				<div class="col-md-3">
+					<label>Valor 3:</label>
+					<input type="number" class="form-control" id="e4v3" value="0">
+				</div>
+				<div class="col-md-3">
+					<br>
+					<input type="button" class="form-control btn btn-primary" id="e4b1" value="Ordenar">
+				</div>
+			</div>
+
+			<div id="eje5" class="row">
+				<h3>Calcular el promedio de tres notas - Aprobado/No Aprobado</h3>
+				<div class="col-md-3">
+					<label>Nota 1:</label>
+					<input type="number" class="form-control" id="e5v1" value="0">
+				</div>
+				<div class="col-md-3">
+					<label>Nota 2:</label>
+					<input type="number" class="form-control" id="e5v2" value="0">
+				</div>
+				<div class="col-md-3">
+					<label>Nota 3:</label>
+					<input type="number" class="form-control" id="e5v3" value="0">
+				</div>
+				<div class="col-md-3">
+					<br>
+					<input type="button" class="form-control btn btn-primary" id="e5b1" value="Promediar">
+				</div>
+			</div> 
+
+			<div id="eje6" class="row">
+				<h3>Área de un triángulo</h3>
+				<div class="col-md-4">
+					<label>Altura:</label>
+					<input type="number" class="form-control" id="e6v1" value="0">
+				</div>
+				<div class="col-md-4">
+					<label>Base: </label>
+					<input type="number" class="form-control" id="e6v2" value="0">
+				</div>
+				<div class="col-md-4">
+					<br>
+					<input type="button" class="form-control btn btn-primary" id="e6b1" value="Calcular">
+				</div>
+			</div>
+
+			<div id="eje7" class="row">
+				<h3>Determinar si un número es par o impar</h3>
+				<div class="col-md-6">
+					<label>Valor 1:</label>
+					<input type="number" class="form-control" id="e7v1" value="0">
+				</div>
+				<div class="col-md-6">
+					<br>
+					<input type="button" class="form-control btn btn-primary" id="e7b1" value="Calcular">
+				</div>
+			</div>
+
+			<div id="eje8" class="row">
+				<h3>Venta de rosas - valor descuento</h3>
+				<div class="col-md-4">
+					<label>Color:</label>
+					<input type="text" class="form-control" id="e8v1" value="Rojo">
+				</div>
+				<div class="col-md-4">
+					<label>Cantidad:</label>
+					<input type="number" class="form-control" id="e8v2" value="2">
+				</div>
+				<div class="col-md-4">
+					<br>
+					<input type="button" class="form-control btn btn-primary" id="e8b1" value="Calcular">
+				</div>
+			</div>
+
+			<div id="eje9" class="row">
+				<h3>Calcular porcentaje ganado por número de ventas</h3>
+				<div class="col-md-4">
+					<label>Productos Vendidos:</label>
+					<input type="number" class="form-control" id="e9v1" value="42">
+				</div>
+				<div class="col-md-4">
+					<label>Total Ventas:</label>
+					<input type="number" class="form-control" id="e9v2" value="1200000">
+				</div>
+				<div class="col-md-4">
+					<br>
+					<input type="button" class="form-control btn btn-primary" id="e9b1" value="Calcular">
+				</div>
+			</div>
+
+			<div id="eje10" class="row">
+				<h3>Concesionario de Vehículos</h3>
+				<div class="col-md-4">
+					<label>Marca:</label>
+					<input type="text" class="form-control" id="e10v1" value="Mazda">
+				</div>
+				<div class="col-md-4">
+					<label>Modelo:</label>
+					<input type="number" class="form-control" id="e10v2" value="1994">
+				</div>
+				<div class="col-md-4">
+					<label>Precio:</label>
+					<input type="number" class="form-control" id="e10v3" value="1000" min="1000" max="58000">
+				</div>
+				<div class="col-md-6">
+					<label>Color:</label>
+					<select class="form-control form-select" id="e10v4">
+						<option>Amarrillo</option>
+						<option>Azul</option>
+						<option>Rojo</option>
+						<option>Verde</option>
+						<option>Blanco</option>
+						<option>Negro</option>
+						<option>Otro color</option>
+					</select>
+				</div>
+				<div class="col-md-6">
+					<br>
+					<input type="button" class="form-control btn btn-primary" id="e10b1" value="Cotizar">
+				</div>
+			</div>
+
+			<div id="eje11" class="row">
+				<h3>Incremento y Decremento</h3>
+			</div> 
+
+			<div id="eje12" class="row">
+				<h3>Serie de Fibonacci</h3>
+				<div class="col-md-6">
+					<label>Valor:</label>
+					<input type="number" class="form-control" id="e12v1" value="10">
+				</div>
+				<div class="col-md-6">
+					<br>
+					<input type="button" class="form-control btn btn-primary" id="e12b1" value="Mostrar">
+				</div>
+			</div>
+
+			<div id="eje13" class="row">
+				<h3>Generar números primos</h3>
+				<div class="col-md-6">
+					<label>Valor:</label>
+					<input type="number" class="form-control" id="e13v1" value="10">
+				</div>
+				<div class="col-md-6">
+					<br>
+					<input type="button" class="form-control btn btn-primary" id="e13b1" value="Generar">
+				</div>
+			</div>
+
+			<div id="eje14" class="row">
+				<h3>Números pares e impares</h3>
+				<div class="col-md-6">
+					<label>Valor:</label>
+					<input type="number" class="form-control" id="e14v1" value="10">
+				</div>
+				<div class="col-md-6">
+					<br>
+					<input type="button" class="form-control btn btn-primary" id="e14b1" value="Mostrar">
+				</div>
+			</div>
+
+			<div id="eje15" class="row">
+				<h3>Menú de operaciones</h3>
+				<div class="col-md-4">
+					<label>Valor 1:</label>
+					<input type="number" class="form-control" id="e15v1" value="5">
+				</div>
+				<div class="col-md-4">
+					<label>Valor 2:</label>
+					<input type="number" class="form-control" id="e15v2" value="8">
+				</div>
+				<div class="col-md-4">
+					<label>Valor 2:</label>
+					<input type="number" class="form-control" id="e15v3" value="3">
+				</div>
+				<div class="col-md-6">
+					<label>Operación:</label>
+					<select class="form-control form-select" id="e15v4">
+						<option>--Seleccionar--</option>
+						<option value="o1">Suma</option>
+						<option value="o2">Módulo</option>
+						<option value="o3">División</option>
+						<option value="o4">Suma tres números</option>
+						<option value="o5">Multiplicación tres números</option>
+					</select>
+				</div>
+				<div class="col-md-6">
+					<br>
+					<input type="button" class="form-control btn btn-primary" id="e15b1" value="Calcular">
+				</div>
+			</div>
+
+			<div id="eje16" class="row">
+				<h3>Número divisible por 2 y 3</h3>
+				<div class="col-md-6">
+					<label>Valor:</label>
+					<input type="number" class="form-control" id="e16v1" value="24">
+				</div>
+				<div class="col-md-6">
+					<br>
+					<input type="button" class="form-control btn btn-primary" id="e16b1" value="Calcular">
+				</div>
+			</div>
+
+			<div id="eje17" class="row">
+				<h3>Generar números primos en cierto rango</h3>
+				<div class="col-md-4">
+					<label>Valor 1:</label>
+					<input type="number" class="form-control" id="e17v1" value="5">
+				</div>
+				<div class="col-md-4">
+					<label>Valor 2:</label>
+					<input type="number" class="form-control" id="e17v2" value="20">
+				</div>
+				<div class="col-md-4">
+					<br>
+					<input type="button" class="form-control btn btn-primary" id="e17b1" value="Generar">
+				</div>
+			</div>
+
+			<div id="eje18" class="row">
+				<h3>Tiempo entre 00:00:00 - 23:00:00</h3>
+			</div>	
+
+			<div id="eje19" class="row">
+				<h3>Tabla de multiplicar</h3>
+				<div class="col-md-6">
+					<label>Valor:</label>
+					<input type="number" class="form-control" id="e19v1" value="12">
+				</div>
+				<div class="col-md-6">
+					<br>
+					<input type="button" class="form-control btn btn-primary" id="e19b1" value="Generar">
+				</div>
+			</div>
+
+			<div id="eje20" class="row">
+				<h3>Filtración de números<h3>
+			</div>
+
+			<div id="eje21" class="row">
+				<h3>Suma de dos números</h3>
+				<div class="col-md-4">
+					<label>Valor 1:</label>
+					<input type="number" class="form-control" id="e21v1" value="7">
+				</div>
+				<div class="col-md-4">
+					<label>Valor 2:</label>
+					<input type="number" class="form-control" id="e21v2" value="12">
+				</div>
+				<div class="col-md-4">
+					<br>
+					<input type="button" class="form-control btn btn-primary" id="e21b1" value="Sumar">
+				</div>
+			</div>
+
+			<div id="eje22" class="row">
+				<h3>Promedio Calificaciones</h3>
+				<div class="col-md-3">
+					<label>Nota 1:</label>
+					<input type="number" class="form-control" id="e22v1" value="4.5">
+				</div>
+				<div class="col-md-3">
+					<label>Nota 2:</label>
+					<input type="number" class="form-control" id="e22v2" value="3.4">
+				</div>
+				<div class="col-md-3">
+					<label>Nota 3:</label>
+					<input type="number" class="form-control" id="e22v3" value="4.5">
+				</div>
+				<div class="col-md-3">
+					<label>Nota 4:</label>
+					<input type="number" class="form-control" id="e22v4" value="3.4">
+				</div>
+				<div class="col-md-12">
+					<br>
+					<input type="button" class="form-control btn btn-primary" id="e22b1" value="Promediar">
+				</div>
+			</div>
+
+			<div id="eje23" class="row">
+				<h3>Área de un rectángulo</h3>
+				<div class="col-md-4">
+					<label>Base:</label>
+					<input type="number" class="form-control" id="e23v1" value="7.8">
+				</div>
+				<div class="col-md-4">
+					<label>Altura:</label>
+					<input type="number" class="form-control" id="e23v2" value="4.1">
+				</div>
+				<div class="col-md-4">
+					<br>
+					<input type="button" class="form-control btn btn-primary" id="e23b1" value="Calcular">
+				</div>
+			</div>
+
+			<div id="eje24" class="row">
+				<h3>Área de una circunferencia</h3>
+				<div class="col-md-6">
+					<label>Radio:</label>
+					<input type="number" class="form-control" id="e24v1" value="3">
+				</div>
+				<div class="col-md-6">
+					<br>
+					<input type="button" class="form-control btn btn-primary" id="e24b1" value="Calcular">
+				</div>
+			</div>
+
+			<div id="eje25" class="row">
+				<h3>Área de un terreno</h3>
+				<div class="col-md-4">
+					<label>Base triángulo y rectángulo:</label>
+					<input type="number" class="form-control" id="e25v1" value="12">
+				</div>
+				<div class="col-md-4">
+					<label>Altura triángulo y rectángulo:</label>
+					<input type="number" class="form-control" id="e25v2" value="10">
+				</div>
+				<div class="col-md-4">
+					<label>Altura rectángulo:</label>
+					<input type="number" class="form-control" id="e25v3" value="4">
+				</div>
+				<div class="col-md-12">
+					<br>
+					<input type="button" class="form-control btn btn-primary" id="e25b1" value="Calcular">
+				</div>
+			</div>
+
+			<div id="eje26" class="row">
+				<h3>Área de una figura</h3>
+				<div class="col-md-4">
+					<label>Base triángulo y radio:</label>
+					<input type="number" class="form-control" id="e26v1" value="4">
+				</div>
+				<div class="col-md-4">
+					<label>Hipotenusa triángulo:</label>
+					<input type="number" class="form-control" id="e26v2" value="15">
+				</div>
+				<div class="col-md-4">
+					<br>
+					<input type="button" class="form-control btn btn-primary" id="e26b1" value="Calcular">
+				</div>
+			</div>
+			<div id="eje27" class="row">
+				<h3>Conversión de litros a galones</h3>
+				<div class="col-md-4">
+					<label>Litros de leche:</label>
+					<input type="number" class="form-control" id="e27v1" value="100">
+				</div>
+				<div class="col-md-4">
+					<label>precio del galón::</label>
+					<input type="number" class="form-control" id="e27v2" value="8000">
+				</div>
+				<div class="col-md-4">
+					<br>
+					<input type="button" class="form-control btn btn-primary" id="e27b1" value="Convertir">
+				</div>
+			</div>
+			<div id="eje28" class="row">
+				<h3>Distancia entre dos puntos - Plano Cartesiano</h3>
+				<div class="col-md-3">
+					<label>X1:</label>
+					<input type="number" class="form-control" id="e28v1" value="2">
+				</div>
+				<div class="col-md-3">
+					<label>Y1:</label>
+					<input type="number" class="form-control" id="e28v2" value="5">
+				</div>
+				<div class="col-md-3">
+					<label>X2:</label>
+					<input type="number" class="form-control" id="e28v3" value="9">
+				</div>
+				<div class="col-md-3">
+					<label>Y2:</label>
+					<input type="number" class="form-control" id="e28v4" value="16">
+				</div>
+				<div class="col-md-12">
+					<br>
+					<input type="button" class="form-control btn btn-primary" id="e28b1" value="Calcular">
+				</div>
+			</div>
+
+			<div id="eje29" class="row">
+				<h3>Conversión de metros a pulgadas</h3>
+				<div class="col-md-6">
+					<label>Metros:</label>
+					<input type="number" class="form-control" id="e29v1" value="40.2">
+				</div>
+				<div class="col-md-6">
+					<br>
+					<input type="button" class="form-control btn btn-primary" id="e29b1" value="Calcular">
+				</div>
+			</div>
+
+			<div id="eje30" class="row">
+				<h3>Pago por consumo de agua - Alberca</h3>
+				<div class="col-md-3">
+					<label>Altura alberca:</label>
+					<input type="number" class="form-control" id="e30v1" value="1.8">
+				</div>
+				<div class="col-md-3">
+					<label>Largo alberca:</label>
+					<input type="number" class="form-control" id="e30v2" value="5.6">
+				</div>
+				<div class="col-md-3">
+					<label>Ancho alberca:</label>
+					<input type="number" class="form-control" id="e30v3" value="4.2">
+				</div>
+				<div class="col-md-3">
+					<label>Costo metro cúbico:</label>
+					<input type="number" class="form-control" id="e30v4" value="3500">
+				</div>
+				<div class="col-md-12">
+					<br>
+					<input type="button" class="form-control btn btn-primary" id="e30b1" value="Calcular">
+				</div>
+			</div>
+			<div id="eje31" class="row">
+				<h3>Valor Mayor</h3>
+				<div class="col-md-4">
+					<label>Valor 1:</label>
+					<input type="number" class="form-control" id="e31v1" value="45">
+				</div>
+				<div class="col-md-4">
+					<label>Valor 2:</label>
+					<input type="number" class="form-control" id="e31v2" value="12">
+				</div>
+				<div class="col-md-4">
+					<br> 
+					<input type="button" class="form-control btn btn-primary" id="e31b1" value="Calcular">
+				</div>
+			</div>
+
+			<div id="eje32" class="row">
+				<h3>Determinar si un número es positivo o negativo</h3>
+				<div class="col-md-6">
+					<label>Número:</label>
+					<input type="number" class="form-control" id="e32v1" value="-5">
+				</div>
+				<div class="col-md-6">
+					<br>
+					<input type="button" class="form-control btn btn-primary" id="e32b1" value="Calcular">
+				</div>
+			</div>
+
+			<div id="eje33" class="row">
+				<h3>Precio por lápices</h3>
+				<div class="col-md-6">
+					<label>Cantidad:</label>
+					<input type="number" class="form-control" id="e33v1" value="1650">
+				</div>
+				<div class="col-md-6">
+					<br>
+					<input type="button" class="form-control btn btn-primary" id="e33b1" value="Calcular">
+				</div>
+			</div>
+
+			<div id="eje34" class="row">
+				<h3>Almacén “El harapiento distinguido” - Descuento Trajes </h3>
+				<div class="col-md-6">
+					<label>Precio:</label>
+					<input type="number" class="form-control" id="e34v1" value="3400">
+				</div> 
+				<div class="col-md-6">
+					<br>
+					<input type="button" class="form-control btn btn-primary" id="e34b1" value="Calcular">
+				</div>
+			</div>
+
+			<div id="eje35" class="row">
+				<h3>Valor mayor entre tres números</h3>
+				<div class="col-md-4">
+					<label>Valor 1:</label>
+					<input type="number" class="form-control" id="e35v1" value="45">
+				</div>
+				<div class="col-md-4"> 
+					<label>Valor 2:</label>
+					<input type="number" class="form-control" id="e35v2" value="12">
+				</div>
+				<div class="col-md-4">
+					<label>Valor 3:</label>
+					<input type="number" class="form-control" id="e35v3" value="-9">
+				</div> 
+				<div class="col-md-12">
+					<br>
+					<input type="button" class="form-control btn btn-primary" id="e35b1" value="Calcular">
+				</div>
+			</div>
+
+			<div id="eje36" class="row">
+				<h3>"La langosta ahumada" - Presupuesto Banquete</h3>
+				<div class="col-md-6">
+					<label>Número de personas:</label>
+					<input type="number" class="form-control" id="e36v1" value="230">
+				</div> 
+				<div class="col-md-6">
+					<br>
+					<input type="button" class="form-control btn btn-primary" id="e36b1" value="Calcular">
+				</div>
+			</div>
+
+			<div id="eje37" class="row">
+				<h3>Asociación de vinicultores - Precio Uvas</h3>
+				<div class="col-md-6">
+					<label>Tipo de uva:</label>
+					<select class="form-control form-select" id="e37v1">
+						<option>--Seleccionar--</option>
+						<option value="A">A</option>
+						<option value="B">B</option>
+					</select>
+				</div>
+				<div class="col-md-6">
+					<label>Tamaño de uva:</label>
+					<select class="form-control form-select" id="e37v2">
+						<option>--Seleccionar--</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+					</select>
+				</div>
+				<div class="col-md-6">
+					<label>Precio de uva:</label>
+					<input type="number" class="form-control" id="e37v3" value="3000">
+				</div>
+				<div class="col-md-6">
+					<label>Kg producción:</label>
+					<input type="number" class="form-control" id="e37v4" value="10">
+				</div>
+				<div class="col-md-12">
+					<br>
+					<input type="button" class="form-control btn btn-primary" id="e37b1" value="Calcular">
+				</div>
+			</div>
+
+			<div id="eje38" class="row">
+				<h3>Precio Viaje Estudiantil</h3>
+				<div class="col-md-6">
+					<label>Número estudiantes:</label>
+					<input type="number" class="form-control" id="e38v1" value="45">
+				</div> 
+				<div class="col-md-6">
+					<br>
+					<input type="button" class="form-control btn btn-primary" id="e38b1" value="Calcular">
+				</div>
+			</div>
+			<div id="eje39" class="row">
+				<div class="col-md-4">
+					<label>Tiempo (min):</label>
+					<input type="number" class="form-control" id="e39v1" value="15">
+				</div> 
+				<div class="col-md-4">
+					<label>Tipo del día:</label>
+					<select class="form-control form-select" id="e39v2">
+						<option>--Seleccionar--</option>
+						<option value="dh">Día hábil</option>
+						<option value="dg">Domingo</option>
+					</select>
+				</div>
+				<div class="col-md-4">
+					<label>Turno:</label>
+					<select class="form-control form-select" id="e39v3">
+						<option>--Seleccionar--</option>
+						<option value="m">Matutino</option>
+						<option value="v">Vespertino</option>
+					</select>
+				</div>
+				<div class="col-md-12">
+					<br>
+					<input type="button" class="form-control btn btn-primary" id="e39b1" value="Calcular">
+				</div>
+			</div>
+
+			<div id="eje40" class="row">
+				<div class="col-md-4">
+					<label>Tipo de Autobus:</label>
+					<select class="form-control form-select" id="e40v1">
+						<option>--Seleccionar--</option>
+						<option value="A">A</option>
+						<option value="B">B</option>
+						<option value="C">C</option>
+					</select>
+				</div>
+				<div class="col-md-4">
+					<label>kg por recorrer:</label>
+					<input type="number" class="form-control" id="e40v2" value="120">
+				</div> 
+				<div class="col-md-4">
+					<label>Número de personas:</label>
+					<input type="number" class="form-control" id="e40v3" value="35">
+				</div> 
+				<div class="col-md-12">
+					<br>
+					<input type="button" class="form-control btn btn-primary" value="Calcular" id="e40b1">
+				</div>
+			</div>
+
+			<div id="eje41" class="row">
+				<h3>Costo de Tratamiento Médico</h3>
+				<div class="col-md-6">
+					<label>Número de consulta:</label>
+					<input type="number" class="form-control" id="e41v1" value="6">
+				</div>
+				<div class="col-md-6">
+					<br>
+					<input type="button" class="form-control btn btn-primary" id="e41b1" value="Calcular">
+				</div>
+			</div>
+			<div id="eje42" class="row">
+				<h3>Compañia de Paquetería</h3>
+				<div class="col-md-4">
+					<label>Zona:</label>
+					<select class="form-control form-select" id="e42v1">
+						<option value="0">--Seleccionar--</option>
+						<option value="1">América del Norte</option>
+						<option value="2">América Central</option>
+						<option value="3">América del Sur</option><option value="4">Europa</option>
+						<option value="5">Asia</option>
+					</select>
+				</div>
+				<div class="col-md-4">
+					<label>Peso del paquete en g</label>
+					<input type="number" class="form-control" id="e42v2" value="2500">
+				</div>
+				<div class="col-md-4">
+					<br>
+					<input type="button" class="form-control btn btn-primary" id="e42b1" value="Calcular">
+				</div>
+			</div>
+			<div id="eje43" class="row">
+				<h3>Aumento Límite de Crédito</h3>
+				<div class="col-md-4">
+					<label>Tarjeta a aumentar el crédito:</label>
+					<select class="form-control form-select" id="e43v1">
+						<option value="0">--Seleccionar--</option>
+						<option value="1">Tipo 1</option>
+						<option value="2">Tipo 2</option>
+						<option value="3">Tipo 3</option>
+						<option value="4">Tipo 4</option>
+						<option value="5">Otro tipo</option>
+					</select>
+				</div>
+				<div class="col-md-4">
+					<label>Límite actual crédito:</label>
+					<input type="number" class="form-control" id="e43v2" value="2500000">
+				</div>
+				<div class="col-md-4">
+					<br>
+					<input type="button" class="form-control btn btn-primary" id="e43b1" value="Calcular">
+				</div>
+			</div>
+			<div id="eje44" class="row">
+				<h3>Premios por compras de alto valor</h3>
+				<div class="col-md-4">
+					<label>Valor de su compra:</label>
+					<input type="number" class="form-control" id="e44v1" value="27400">
+				</div>
+				<div class="col-md-4">
+					<label>Género:</label>
+					<select class="form-control form-select" id="e44v2">
+						<option value="o">--Seleccionar--</option>
+						<option value="m">Masculino</option>
+						<option value="f">Femenino</option>
+					</select>
+				</div>
+				<div class="col-md-4">
+					<br>
+					<input type="button" class="form-control btn btn-primary" id="e44b1" value="Premiar">
+				</div>
+			</div>
+			<div id="eje45" class="row">
+				<h3>Menú - Operaciones Básicas</h3>
+				<div class="col-md-4">
+					<label>Valor 1:</label>
+					<input type="number" class="form-control" id="e45v1" value="34">
+				</div>
+				<div class="col-md-4">
+					<label>Valor 2:</label>
+					<input type="number" class="form-control" id="e45v2" value="12">
+				</div>
+				<div class="col-md-4">
+					<label>Operación:</label>
+					<select class="form-control form-select" id="e45v3">
+						<option value="0">--Seleccionar--</option>
+						<option value="1">Suma</option>
+						<option value="2">Resta</option>
+						<option value="3">Multiplicación</option>
+						<option value="4">División</option>
+					</select>
+				</div>
+				<div class="col-md-12">
+					<br>
+					<input type="button" class="form-control btn btn-primary" id="e45b1" value="Calcular">
+				</div>
+			</div>
+			<div id="eje46" class="row">
+				<h3>Menú - Operaciones con 1 valor</h3>
+				<div class="col-md-4">
+					<label>Valor:</label>
+					<input type="number" class="form-control" id="e46v1" value="6">
+				</div>
+				<div class="col-md-4">
+					<label>Operación:</label>
+					<select class="form-control form-select" id="e46v2">
+						<option value="0">--Seleccionar--</option>
+						<option value="1">¿Es Primo?</option>
+						<option value="2">Factorial</option>
+						<option value="3">Tabla de multiplicar</option>
+					</select>
+				</div>
+				<div class="col-md-4">
+					<br>
+					<input type="button" class="form-control btn btn-primary" id="e46b1" value="Calcular">
+				</div>
+			</div>
+			<div id="eje47" class="row">
+				<h3>Números primos entre y n</h3>
+				<div class="col-md-6">
+					<label>Valor:</label>
+					<input type="number" class="form-control" id="e47v1" value="20">
+				</div>
+				<div>
+					<br>
+					<input type="button" class="form-control btn btn-primary" id="e47b1" value="Mostrar">
+				</div>
+			</div>
+			<div id="eje48" class="row">
+				<h3>Porcentaje de Hombres y Mujeres</h3>
+				<div class="col-md-6">
+					<label>Número de personas:</label>
+					<input type="number" class="form-control" id="e48v1" value="1500">
+				</div>
+				<div class="col-md-6">
+					<label>Número de mujeres:</label>
+					<input type="number" class="form-control" id="e48v2" value="678">
+				</div>
+				<div>
+					<br>
+					<input type="button" class="form-control btn btn-primary" id="e48b1" value="Calcular">
+				</div>
+			</div>
+			<div id="eje49" class="row">
+				<h3>Suma de 5-10 Números</h3>
+				<div class="col-md-6">
+					<label>Cantidad:</label>
+					<input type="number" class="form-control" id="e49v1" value="5">
+				</div>
+				<div>
+					<br>
+					<input type="button" class="form-control btn btn-primary" id="e49b1" value="Mostrar">
+				</div>
+			</div>
+
+			<div id="eje50" class="row">
+				<h3>Números pares e impares</h3>
+				<div class="col-md-6">
+					<label>Ingrese un valor:</label>
+					<input type="number" class="form-control" id="e50v1" value="10">
+				</div>
+				<div class="col-md-6">
+					<br>
+					<input type="button" class="form-control btn btn-primary" id="e50b1" value="Mostrar">
+				</div>
+			</div>
+
+			<div id="eje51" class="row">
+				<h3>Informe de Ventas - Supermercado</h3>
+				<div class="col-md-6">
+					<label>Número de ventas:</label>
+					<input type="number" class="form-control" id="e51v1" value="30">
+				</div>
+				<div class="col-md-6">
+					<br>
+					<input type="button" class="form-control btn btn-primary" id="e51b1" value="Mostrar">
+				</div>
+			</div>
+
+			<div id="eje52" class="row">
+				<h3>Suma de 10-20 Números</h3>
+				<div class="col-md-6">
+					<label>Ingrese un valor:</label>
+					<input type="number" class="form-control" id="e52v1" value="10">
+				</div>
+				<div class="col-md-6">
+					<br>
+					<input type="button" class="form-control btn btn-primary" id="e52b1" value="Mostrar">
+				</div>
+			</div>
+			
+			<div id="eje53" class="row">
+				<h3>Edad Promedio - Grupo de Alumnos</h3>
+				<div class="col-md-6">
+					<label>Número Alumnos:</label>
+					<input type="number" class="form-control" id="e53v1" value="15">
+				</div>
+				<div class="col-md-6">
+					<br>
+					<input type="button" class="form-control btn btn-primary" id="e53b1" value="Calcular">
+				</div>
+			</div>
+			<div id='eje54' class='row'>
+				<h3>Altura Promedio - Grupo de Personas</h3>
+				<div class="col-md-12">
+					<label>Altura cm:</label>
+					<input type="number" class="form-control" id="e54v1" value="1.56">
+				</div>
+				<div class="col-md-6">
+					<br>
+					<input type="button" class="form-control btn btn-primary" id="e54b1" value="Registrar">
+				</div>
+				<div class="col-md-6">
+					<br>
+					<input type="button" class="form-control btn btn-primary" id="e54b2" value="Calcular">
+				</div>
+			</div>
+			<div id='eje55' class='row'>
+			</div>
+			<div id='eje56' class='row'>
+				<h3>Sucesión de Fibonacci</h3>
+				<div class="col-md-6">
+					<label>Cantidad de números:</label>
+					<input type="number" class="form-control" id="e56v1" value="10">
+				</div>
+				<div class="col-md-6">
+					<br>
+					<input type="button" class="form-control btn btn-primary" id="e56b1" value="Generar">
+				</div>
+			</div>
+			<div id='eje57' class='row'></div>
+			<div id='eje58' class='row'>
+				<h3>Kilómetro de encuentro autos  / Aguascalientes-Zacatecas</h3>
+			</div>
+			<div id='eje59' class='row'>
+				<h3>Informe de Ventas Diarias- Tiki Taka</h3>
+				<div class="col-md-6">
+					<label>Número de ventas:</label>
+					<input type="number" class="form-control" id="e59v1" value="30">
+				</div>
+				<div class="col-md-6">
+					<br>
+					<input type="button" class="form-control btn btn-primary" id="e59b1" value="Mostrar">
+				</div>
+			</div>
+			<div id='eje60' class='row'>
+				<h3>Nómina Quincena Empleados - Constructora Tecnovivir</h3>
+				<div class="col-md-4">
+					<label>Número de empleados:</label>
+					<input type="number" class="form-control" id="e60v1" value="50">
+				</div>
+				<div class="col-md-4">
+					<label>Valor hora:</label>
+					<input type="number" class="form-control" id="e60v2" value="30000">
+				</div>
+				<div class="col-md-4">
+					<br>
+					<input type="button" class="form-control btn btn-primary" id="e60b1" value="Calcular">
+				</div>
+			</div>
+			<div id="eje61" class="row"></div>
+			<div id='eje62' class='row'>
+				<h3>Suma de n valores con do-while</h3>
+				<div class="col-md-6">
+					<label>Cantidad de Números:</label>
+					<input type="number" class="form-control" id="e62v1" value="10">
+				</div>
+				<div class="col-md-6">
+					<br>
+					<input type="button" class="form-control btn btn-primary" id="e62b1" value="Sumar">
+				</div>
+			</div>
+			<div id='eje63' class='row'>
+				<h3>Número negativos y positivos</h3>
+				<div class="col-md-6">
+					<label>Cantidad de Números:</label>
+					<input type="number" class="form-control" id="e63v1" value="15">
+				</div>
+				<div class="col-md-6">
+					<br>
+					<input type="button" class="form-control btn btn-primary" id="e63b1" value="Clasificar">
+				</div>
+			</div>
+			<div id='eje64' class='row'>
+				<h3>Sumas n Valores - Vector</h3>
+				<div class="col-md-6">
+					<label>Cantidad de Números:</label>
+					<input type="number" class="form-control" id="e64v1" value="10">
+				</div>
+				<div class="col-md-6">
+					<br>
+					<input type="button" class="form-control btn btn-primary" id="e64b1" value="Calcular">
+				</div>
+			</div>
+			<div id='eje65' class='row'>
+				<h3>Clasificación de Números Positivos y Negativos - Mayor / Menor</h3>
+				<div class="col-md-6">
+					<label>Cantidad de Números:</label>
+					<input type="number" class="form-control" id="e65v1" value="20">
+				</div>
+				<div class="col-md-6">
+					<br>
+					<input type="button" class="form-control btn btn-primary" id="e65b1" value="Clasificar">
+				</div>
+			</div>
+			<div id='eje66' class='row'>
+				<h3>Encontrar un elemento en un vector - Números 1 al 200</h3>
+				<div class="col-md-6">
+					<label>Valor a buscar:</label>
+					<input type="number" class="form-control" id="e66v1" value="56">
+				</div>
+				<div class="col-md-6">
+					<br>
+					<input type="button" class="form-control btn btn-primary" id="e66b1" value="Buscar">
+				</div>
+			</div>
+			<div id='eje67' class='row'>
+				<h3>Invertir el orden de un vector</h3>
+				<div class="col-md-6">
+					<label>Tamaño del vector:</label>
+					<input type="number" class="form-control" id="e67v1" value="35">
+				</div>
+				<div class="col-md-6">
+					<br>
+					<input type="button" class="form-control btn btn-primary" id="e67b1" value="Invertir">
+				</div>
+			</div>
+			<div id='eje68' class='row'>
+				<h3>Calcular promedio Número positivos - Hasta que se ingrese uno negativo</h3>
+				<div class="col-md-6">
+					<label>Ingrese un número:</label>
+					<input type="number" class="form-control" id="e68v1" value="12">
+				</div>
+				<div class="col-md-6">
+					<br>
+					<input type="button" class="form-control btn btn-primary" id="e68b1" value="Promediar">
+				</div>
+			</div>
+			<div id='eje69' class='row'>
+				<h3>Notas Aprobadas - Matriz</h3>
+			</div>
+			<div id='eje70' class='row'>
+				<h3>Ordenar matriz de menor a mayor</h3>
+			</div>
+			<div id='eje71' class='row'>
+				<h3>Multiplicación de Matrices</h3>
+			</div>
+			<div id='eje72'>
+				<div id="tq">
+					<div id="c1" class="ctq"></div>
+					<div id="c2" class="ctq"></div>
+					<div id="c3" class="ctq"></div>
+					<div id="c4" class="ctq"></div>
+					<div id="c5" class="ctq"></div>
+					<div id="c6" class="ctq"></div>
+					<div id="c7" class="ctq"></div>
+					<div id="c8" class="ctq"></div>
+					<div id="c9" class="ctq"></div>
+					<div id="lefi"></div>
+					<input type="button" value="Iniciar" class="form-control btn btn-primary" onclick="inicia();">
+				</div>
+			</div>
+
+			<div id="res" class="res"></div>
+
+		</div> 
+	</section>
+	<footer>
+		ADSO-3235287 - Desarrollado por: Valery Mac&iacute;as D&iacute;az <!-- tildes-->
+		<br>
+		2026 &copy; Todos los derechos reservados
+	</footer>
+</body>
+<script src="js/code.js"></script> 
+</html>
